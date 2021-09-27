@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+.introduction {
+  margin-top: 2em;
+}
+
+.instructions {
+  font-weight: bold;
+  margin: 1em;
+}
+
+.survey-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
+  width: 80%;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.3em;
+}
+
+.even-question {
+  background-color: #eafbea;
+}
+
+.odd-question {
+  background-color: #ffeff6;
+}
+
+.warning {
+  color: #e42222;
+  margin-top: 1em;
+}
+
+.submit {
+  border-radius: 1em;
+  height: 2em;
+  margin-bottom: 8em;
+  margin-top: 2em;
+  width: 9em;
+}
+
+.victory-container {
+  height: 400px important!;
+  width: 600px;
+}
