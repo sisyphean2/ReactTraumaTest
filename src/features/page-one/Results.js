@@ -18,8 +18,13 @@ export function Results() {
   	return (<div key={index}>{category + ': ' + results[index]}</div>);
   });
 
-  const image = null;
-  //const image = (<img src="public/coupleScaled.jpg" alt="Alternative Text">);
+  const image = (
+    <img 
+      className='results-image'
+      src="https://raw.githubusercontent.com/sisyphean2/ReactTraumaTest/main/public/coupleScaled.jpg" 
+      alt="Temporary picture."
+    />
+  );
 
   const graphData = results.map((result, index) => {
   	return {x: resultCategories[index], y: result}
@@ -29,7 +34,6 @@ export function Results() {
     <div className='results-container'>
       {text}
       {resultContainers}
-      {image}
       <div className='victory-container'>
         <VictoryChart height={400} width={600}>
           <VictoryGroup offset={3}
@@ -43,6 +47,7 @@ export function Results() {
           </VictoryGroup>
         </VictoryChart>
       </div>
+      {image}
     </div>
   );
 }

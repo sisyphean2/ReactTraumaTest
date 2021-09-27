@@ -69,6 +69,11 @@
   width: 9em;
 }
 
+.results-image {
+  height: 400px;
+  width: 600px;
+}
+
 .victory-container {
   height: 400px important!;
   width: 600px;
